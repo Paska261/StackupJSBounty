@@ -1,25 +1,63 @@
-# StackupJSBounty
-Bank Account Management Website
-This web application is designed to simulate bank account management, offering a range of functionalities like creating accounts, depositing, withdrawing, checking balances, transferring funds, viewing transaction histories, closing accounts, and performing balance inquiries. The project is constructed using HTML, CSS, and JavaScript and extensively relies on classes, try-catch statements, and switch statements to achieve its functionality.
+# StackupJSBounty# Bank Account Management Website
 
-Instructions:
-Create an Account:
+## Overview
 
-Choose an account type (Savings or Checking).
-Provide the account holder's name.
-Click the "Create Account" button to generate a new account.
-Deposit and Withdraw:
+This web application allows users to simulate bank account management with features like creating accounts, depositing, withdrawing, checking balances, transferring funds, viewing transaction histories, closing accounts, and performing balance inquiries. The project is built using HTML, CSS, and JavaScript, and it extensively utilizes classes, switch statements, and try-catch-finally statements.
 
-Following the creation of an account, users can perform transactions.
-Select the transaction type (Deposit or Withdraw).
-Input the transaction amount.
-Click the "Deposit" or "Withdraw" button.
-For a checking account, if "Withdraw" is selected, an overdraft limit must be specified.
-Transfer Funds:
+## Instructions
 
-To transfer funds between accounts:
-Enter the sender's account number.
-Provide the receiver's account number.
+### Create an Account
+
+1. Select an account type (Savings or Checking).
+2. Enter the account holder's name.
+3. Click the "Create Account" button to create a new account.
+
+### Deposit and Withdraw
+
+1. After creating an account, you can perform transactions.
+2. Select the transaction type (Deposit or Withdraw).
+3. Enter the transaction amount.
+4. Click the "Deposit" or "Withdraw" button.
+5. If you choose "Withdraw" for a checking account, you'll need to specify an overdraft limit.
+
+### Transfer Funds
+
+1. To transfer funds between accounts:
+2. Enter the sender's account number.
+3. Enter the receiver's account number.
+4. Specify the transfer amount.
+5. Click the "Transfer Funds" button.
+
+### View Transaction History
+
+- Click the "Transaction History" button to see a list of your recent transactions.
+
+### Balance Inquiry
+
+- For each account, you can perform a balance inquiry by clicking the "Balance Inquiry" button.
+
+### Close Account
+
+- To close an account, click the "Close Account" button. This action is irreversible.
+
+## Code Walkthrough
+
+### Why Classes?
+
+The core of this application is the `BankAccount` class, which represents bank accounts. It's used to create, manage, and track transactions for individual accounts.
+
+### Switch Statements
+
+Switch statements are used to handle various scenarios, such as selecting account types, transaction types, and managing overdraft limits. They provide a structured way to handle user inputs.
+
+### Try-Catch-Finally Statements
+
+Exception handling is crucial for managing errors gracefully. Try-catch-finally statements are used to catch and handle exceptions, ensuring that the application remains robust even in the face of invalid inputs or other issues.
+
+The website also keeps track of all created accounts in an array, ensuring that users can't create multiple accounts with the same account holder name and type.
+
+Feel free to explore the website and interact with its features to better understand how bank account management is simulated using classes, switch statements, and error handling. Enjoy using the Bank Account Management Website!
+
 Specify the transfer amount.
 Click the "Transfer Funds" button.
 View Transaction History:
